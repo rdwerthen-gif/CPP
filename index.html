@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project+ PK0-005 Study Desk</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+  <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+
+  <nav id="sidebar" class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">P+</div>
+      <div class="brand-text">
+        <div class="brand-title">Study Desk</div>
+        <div class="brand-sub">PK0-005</div>
+      </div>
+    </div>
+
+    <ul class="nav-top">
+      <li><a href="#/dashboard" data-route="dashboard" class="nav-link">Dashboard</a></li>
+      <li><a href="#/exam/full" data-route="exam-full" class="nav-link">Practice Exams</a></li>
+      <li><a href="#/pbq" data-route="pbq" class="nav-link">Performance-Based Questions</a></li>
+      <li><a href="#/acronyms" data-route="acronyms" class="nav-link">Acronyms</a></li>
+      <li><a href="#/studytips" data-route="studytips" class="nav-link">Study Tips</a></li>
+      <li><a href="#/settings" data-route="settings" class="nav-link">Settings</a></li>
+    </ul>
+
+    <div class="nav-domains" id="navDomains"></div>
+
+    <a class="download-btn" href="PK0-005-exam-objectives.pdf" download="CompTIA-Project-Plus-PK0-005-Exam-Objectives.pdf">
+      <span class="download-icon">⬇</span>
+      <span>
+        <span class="download-title">Exam Objectives</span>
+        <span class="download-sub">Official PDF · CompTIA</span>
+      </span>
+    </a>
+  </nav>
+
+  <main id="main" class="main">
+    <div id="view"></div>
+  </main>
+</div>
+
+<script src="questions.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
